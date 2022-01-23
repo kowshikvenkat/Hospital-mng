@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.bing.com/th?id=OIP.qqLc5LFoq_Wq8ON6xAy5qQHaHe&w=96&h=102&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="TXrtLBmAGj51kvusHKdRON7Vg4jXM3MTqqrCwMNV">
+
+    <title>Hospital IQ</title>
+ 
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        
+    
+        <!-- Styles -->
+        <link href="https://www.gangahospital.com/public/css/app.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css  ">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&amp;display=swap" rel="stylesheet">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-LN7KG1XEHX');
+    </script>
+    
+        
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;family=Quicksand:wght@500&amp;display=swap" rel="stylesheet">
+        <style>
+            .modal-dialog {
+                max-width: 800px;
+                margin: 30px auto;
+            }
+    
+    
+            .modal-body {
+                position: relative;
+                padding: 0px;
+            }
+    
+            .close {
+                position: absolute;
+                right: -30px;
+                top: 0;
+                z-index: 999;
+                font-size: 2rem;
+                font-weight: normal;
+                color: #fff;
+                opacity: 1;
+            }
+            .searchdiv {
+                margin-top: -1vh;
+            }
+            .home-top-div{
+                background-size: contain !important;
+                height:60vh;
+                width: 100%;
+            
+            }
+    
+            #myModalDesc ul h3{
+                margin-bottom: 20px;
+            }
+    
+            #myModalDesc ul li{
+                margin-bottom: 10px;
+            }
+            .flip-card-front h6
+            {
+                font-size: 0.9rem;
+            }
+            .flip-card-inner{
+            height:154px
+            }
+            .cbtn{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                background-color: #fe7a21;
+                border-color: #fe7a21;
+                text-transform: unset;
+                color: #fff;
+            }
+            
+            .card {
+        display: block; 
+          margin-bottom: 20px;
+          line-height: 1.42857143;
+          background-color: #fff;
+          border-radius: 2px;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+          transition: box-shadow .25s; 
+          height: 95%;
+      }
+      .card:hover {
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      .img-card {
+        width: 100%;
+        height:200px;
+        border-top-left-radius:2px;
+        border-top-right-radius:2px;
+        display:block;
+          overflow: hidden;
+      }
+      .img-card img{
+        width: 100%;
+        height: 200px;
+        object-fit:cover; 
+        transition: all .25s ease;
+      } 
+      .card-content {
+        padding:15px;
+        text-align:left;
+      }
+      .card-title {
+        margin-top:0px;
+        font-weight: 700;
+        font-size: 1.35em;
+      }
+      .card-title a {
+        color: #000;
+        text-decoration: none !important;
+      }
+      .card-read-more {
+        border-top: 1px solid #D4D4D4;
+      }
+      .card-read-more a {
+        text-decoration: none !important;
+        padding:10px;
+        font-weight:600;
+        text-transform: uppercase
+      }
+      .c_word{
+        color: #356178 !important;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .d_word{
+        color: #356178 !important;
+        font-family: 'Playfair Display', serif;
+        font-weight:700;
+      }
+      :root {
+      --red: #356178;
+      --bgColor: #356178;
+    }
+    
+      .framed:hover {
+      box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red);
+    }
+    
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .owl-nav button.owl-prev {
+      left: 0;
+    }
+    .owl-nav button.owl-next {
+      right: 0;
+    }
+    
+    .owl-dots {
+      text-align: center;
+      padding-top: 15px;
+    }
+    .owl-dots button.owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 3px;
+    }
+    .owl-dots button.owl-dot.active {
+      background-color: #000;
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+    }
+    .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.38) !important;
+    }
+    /*span {*/
+    /*    font-size: 70px;    */
+    /*    position: relative;*/
+    /*    top: -5px;*/
+    /*}*/
+    .owl-nav button:focus {
+        outline: none;
+    }
+        </style>
+        <link rel="stylesheet" href="https://www.gangahospital.com/public/css/flaticon.css">
+        <style type="text/css">
+        
+        .bg-darkblue{
+            background-color: purple !important;
+        }
+             .icon-bars {
+        z-index: 10;
+      position: fixed;
+      top: 30%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 0;
+    }
+    .icon-bars a {
+      display: block;
+      text-align: center;
+      padding: 4px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 15px;
+    }
+    
+    
+     /* fixed social*/
+    #fixed-social {
+       position: fixed;
+       top: 350px;
+    }
+    
+    #fixed-social a {
+       color: #fff;
+       display: block;
+       height: 40px;
+       position: relative;
+       text-align: center;
+        line-height: 40px;
+       width: 40px;
+       margin-bottom: 1px;
+       z-index: 2;
+    }
+    #fixed-social a:hover>span{
+        visibility: visible;
+      left: 41px;
+      opacity: 1;
+    } 
+    #fixed-social a span {
+        line-height: 40px;
+        left: 60px;
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        visibility: hidden;
+        transition-duration: 0.5s;
+        z-index: 1;
+        opacity: 0;
+    }
+     .fixed-facebook{
+        background-color: #4267B2;
+     }
+     .fixed-facebook span{
+        background-color: #4267B2;
+     }
+     .fixed-twitter{
+        background-color: #1DA1F2;
+    
+     }
+     .fixed-twitter span{
+        background-color: #1DA1F2;
+     }
+     .fixed-gplus{
+        background-color: #00AF54;
+    
+     }
+     .fixed-gplus span{
+        background-color: #00AF54;
+     }
+     .fixed-linkedin{
+        background-color: #0077b5;
+    
+     }
+     .fixed-linkedin span{
+        background-color: blue;
+     }
+     .fixed-instagrem{
+        background-color: #E1306C;
+    
+     }
+     .fixed-instagrem span{
+        background-color: #E1306C;
+     }
+     .fixed-tumblr{
+        background-color: violet;
+    
+     }
+     .fixed-tumblr span{
+        background-color: violet;
+     }
+    /*end fixed social*/
+    
+    .mainnav .text-black{
+        color: white !important;
+    }
+    
+    .dropdown-item.active, .dropdown-item:active{
+        background-color: #356178;
+    }
+    
+    
+    #float_top {
+      display: inline-block;
+      background-color: #356178;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 4px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+    }
+    #float_top::after {
+      /*content: "\f077";*/
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+    #float_top:hover {
+      cursor: pointer;
+      background-color: #5593a5;
+    }
+    #float_top:active {
+      background-color: #555;
+    }
+    #float_top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    
+    
+    @media (min-width:768px)  { 
+         tablet, landscape iPad, lo-res laptops ands desktops 
+        .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+        flex-wrap: wrap;
+    }
+    .navbar > .container, .navbar > .container-fluid {
+        display: initial;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center;
+    }
+        
+    }
+    
+    @media (min-width:961px)  { 
+        /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+        .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+        flex-wrap: wrap;
+    }
+    .navbar > .container, .navbar > .container-fluid {
+        display: initial !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center !important;
+    }
+        
+    }
+    
+    @media (min-width:1440px)  { 
+        /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+        .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+        flex-wrap: wrap;
+    }
+    .navbar > .container, .navbar > .container-fluid {
+        display: initial !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: center !important;
+    }
+        
+    }
+    
+    
+    @media (min-width:1880px) { 
+        /* big landscape tablets, laptops, and desktops */ 
+          .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+        flex-wrap: nowrap;
+    }
+    .navbar > .container, .navbar > .container-fluid {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto; 
+        justify-content: left !important;
+    }
+        
+    }
+    
+    
+    
+        </style>
+    </head>
+    
+    <body data-new-gr-c-s-check-loaded="14.999.0" data-gr-ext-installed="" class="" style="">
+        
+        <a id="float_top" class="show"><i style="font-size: 2em;margin-top: 6px;" class="fa fa-angle-up fa-3 text-white" aria-hidden="true"></i></a>
+        
+        <!-- Floating Social Media bar Starts -->
+    <div id="fixed-social">
+      <div>
+        <a href="https://www.facebook.com/iqube.kct" class="fixed-facebook" target="_blank"><i class="fab fa-facebook"></i> <span>Facebook</span></a>
+      </div>
+      <div>
+        <a href="https://twitter.com/?lang=en-in" class="fixed-twitter" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/iqube_kct/" class="fixed-instagrem" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+      </div>
+      <div>
+        <a href="https://in.linkedin.com/company/iqube-kct" class="fixed-linkedin" target="_blank"><img src="https://www.freepnglogos.com/uploads/linkedin-logo-design-30.png" style="width:80%"> <span>LinkedIn</span></a>
+      </div>
+    </div>
+        
+        
+        
+        <div class="icon-bars hide-small">
+        <!--book_logo.gif-->
+           
+      <a href="appointment.php"><img style="height:45px" src="https://www.gangahospital.com/public/images/update/book_an_app.gif"></a>
+         </div>
+    <div class="icon-bars hide-large">
+          <a href="https://www.gangahospital.com/appointment"><img style="height: 35px;margin-left: -20%;" src="https://www.gangahospital.com/public/images/update/book_an_app.gif"></a>
+         <a href="https://gangahospital.com/telemedicine/" target="_blank"><img style="height: 35px;margin-left: -20%;" src="https://www.gangahospital.com/public/images/update/tele_btn_update1.png"></a>
+      
+        <a href="https://www.gangahospital.com/anesthesia#fellow"><img style="height: 35px;margin-left: -20%;" src="https://www.gangahospital.com/public/images/icons/ana_fellow_btn22.png"></a>
+    
+    
+    </div>
+        <div id="app">
+            <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: purple">
+                <div class="container-fluid home-nav">
+                    <a href="https://www.bing.com/th?id=OIP.VCXSyCcFaPcLk69VkXBfxwHaB6&w=310&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" class="navbar-brand">
+                        <img src="https://www.bing.com/th?id=OIP.VCXSyCcFaPcLk69VkXBfxwHaB6&w=310&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="Logo" style="width: 200px;"></a> 
+                        <a href="https://www.gangahospital.com/public/images/update/GPEA Logo.png">
+                            <img src="https://www.gangahospital.com/public/images/update/GPEA Logo.png" alt="Logo" style="width: 35px;"></a> &nbsp;
+                         <a href="https://www.gangahospital.com/public/images/update/nabl.png">
+                            <img src="https://www.gangahospital.com/public/images/update/nabl.png" alt="Logo" style="width: 45px;"></a> &nbsp;
+                    <a href="https://www.gangahospital.com/public/images/logo/accrediation.png">
+                        <img src="https://www.gangahospital.com/public/images/logo/accrediation.png" alt="Logo"></a>&nbsp;
+                  
+                    <a href="https://www.gangahospital.com/public/images/logo/isoc.png">
+                        <img src="https://www.gangahospital.com/public/images/logo/isoc.png" alt="Logo"></a> 
+                         <div id="navbarSupportedContent" class="collapse navbar-collapse" style="justify-content: center !important;">
+                            <ul class="navbar-nav">
+                                <li class="nav-item hide-large">
+                                    <form action="">
+                             <div class="input-group"><input type="text" placeholder="Search Doctors, Procedures or Departments" autocomplete="off" id="searchText" class="form-control p-4 searchText"> 
+                                <div class="input-group-append"><button type="submit" class="btn bg-orange text-white pl-4 pr-4"><i class="fa fa-search"></i></button></div> 
+                                <ul id="specDivs" class="list-unstyled data-list" style="top: 50px; width: 100%; max-height: 40vh;"></ul></div></form></li></ul> <ul class="navbar-nav mainnav"><li class="nav-item">
+                                    <a href="samplehospital.html" class="nav-link text-black">Home</a></li> <li class="nav-item">
+                                        <a href="Aboutus.html" class="nav-link text-black">About Us</a></li>  <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link  text-black dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Patient Info &nbsp;
+                                </a> <div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right"><a href="index.php" class="dropdown-item">
+                                                           Management System     </a> <a href="index1.php" class="dropdown-item">Billing System</a>
+            <li class="nav-item"><a href="#contact" class="nav-link text-black">Contact Us
+                                    </a></li> <li class="nav-item hide-small" style="margin-left: 15px;"><form action=""><div class="input-group"><input type="text" placeholder="Search Doctors, Procedures or Departments" autocomplete="off" id="searchText" class="form-control p-4 searchText"> 
+                                        <div class="input-group-append"><button type="submit" class="btn bg-orange text-white pl-4 pr-4" style="background-color: violet;"><i class="fa fa-search"></i></button></div> <ul id="specDiv" class="list-unstyled data-list" style="top: 50px; width: 100%; max-height: 40vh;"></ul></div></form></li> <li class="nav-item hide-large"><a href="tel:04224250000" class="nav-link">
+                                            Emergency <i class="fas fa-phone" style="transform: rotate(90deg);"></i>&nbsp;&nbsp;0422 4250000</a></li></ul></div></div></nav> <div>
+                                                <section>
+                                                    <div class="home-top-div" style="background: url(&quot;https://assetsamerica.com/wp-content/uploads/Lines-of-Business/Hospital-Building/POSTED/Hospital-Building-Feature-B-UPMC-Childrens-South-Fayette-Exterior-3-1900x721.jpg&quot;); background-position: center; padding-left: 20%;"><div class="col-12 col-md-8 offset-md-2 p-2"><div class="row searchdiv"></div>
+                                                     <div class="row mt-4"><div class="col-md-4 offset-md-4"></div></div></div></div> 
+                                                     <div class="container" style="max-width: 1600px !important; margin-top: -5rem !important;">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div><div class="card-body" id="ab">
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;">
+                                                                            <div class="card framed d-flex flex-column">
+                                                                                    <img src="https://www.gangahospital.com/public/images/update/front_banners_3.jpg" style="background-size: cover;"></a> 
+                                                                                    <div class="card-content">
+                                                                                        <h4 class="card-title text-center">
+                                                                                             SPECIALITIES
+                                      </a></h4> <p class="text-center d_word">
+                                        Get an intro to all our teams &amp; their work!
+                                    </p></div> <div class="card-read-more mt-auto">
+                                                                           </a></div></div></div> 
+                                    <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;">
+                                        <div class="card framed d-flex flex-column">
+                                                <img src="https://www.gangahospital.com/public/images/update/front_banners_2.jpg" style="background-size: cover;"></a> 
+                                                <div class="card-content"><h4 class="card-title text-center">
+                                                    KNOW YOUR DOCTORS
+                                      </a></h4> <p class="text-center d_word">
+                                        Expertise at your service!
+                                    </p></div> <div class="card-read-more mt-auto">
+                                        
+                                    </a></div></div></div> 
+                                    <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;"><div class="card framed d-flex flex-column">
+                                            <img src="https://www.gangahospital.com/public/images/update/book5.jpg" style="background-size: cover; height: 220px;"></a> 
+                                            <div class="card-content" style="padding: 17px;"><h4 class="card-title text-center"><a class="c_word">BOOK ONLINE APPOINTMENT
+                                      </a></h4> <div class="row"></div></div> <div class="card-read-more mt-auto" style="margin-top: 0px;">
+                                        <a href="appointment.php" class="btn btn-link btn-block d_word">
+                                        GET AN APPOINTMENT
+                                    </a></div></div></div> 
+                                    <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;"><div class="card framed d-flex flex-column">
+                                            <img src="https://www.gangahospital.com/public/images/update/front_banners_1.jpg" style="background-size: cover;"></a> 
+                                            <div class="card-content"><h4 class="card-title text-center">
+                                                HOSPITAL SERVICES
+                                      </a></h4> <p class="text-center d_word">
+                                        State of the art technology for safe surgery!
+                                    </p></div> <div class="card-read-more mt-auto">
+                                    </a></div></div></div> 
+                                    <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;"><div class="card framed d-flex flex-column">
+                                       
+                                           <img src="https://www.gangahospital.com/public/images/update/Easy-Testimonial.jpg" style="background-size: cover;"></a> 
+                                           <div class="card-content"><h4 class="card-title text-center">
+                                               PATIENT TESTIMONIALS
+                                      </a></h4> <p class="text-center d_word">
+                                        Our most precious asset!
+                                    </p></div> <div class="card-read-more mt-auto" style="margin-top: 6%;">
+                                        
+                                    </a></div></div></div> 
+                                    <div class="col-xs-12 col-sm-4" style="margin-bottom: 20px;"><div class="card framed d-flex flex-column">
+                                            <img src="https://www.gangahospital.com/public/images/update/society.jpg" style="background-size: cover;"></a> 
+                                            <div class="card-content"><h4 class="card-title text-center">
+                                                GIVING BACK TO SOCIETY
+                                      </a></h4> <p class="text-center d_word">
+                                        Our philosophy to nurture the needs of the society!
+                                    </p></div> <div class="card-read-more mt-auto">
+                                    </a></div></div></div> <div class="col-xs-12 col-sm-12">
+                                        <div class="card framed d-flex flex-column" style="height: 96%;">
+                                            <div class="card-content"><h4 class="card-title text-center">
+                                                <img src="https://www.gangahospital.com/public/images/update/youtube.png" style="height: 100px;"></h4> 
+                                                <div class="col-md-12"><div class="owl-carousel owl-theme owl-loaded owl-drag">          
+                                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3340px, 0px, 0px); transition: all 0.25s ease 0s; width: 5488px;"><div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/FcZTDoueylQ" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                        <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 ">
+                                                            <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Qdv1P-3glLU" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                            <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 ">
+                                                                <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/wQ2TN_gI3sE" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                            <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/WjILHS4--o0" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                            <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 ">
+                                        <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/giQ_UDakSBA" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                        <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ACf-MHzTumM" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                            <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/SjqXXouLNPE" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/meZmJP0lzMs" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                    <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/TF247x-srro" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                        <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9"><video controls="controls" class="embed-responsive-item">
+                                                            <source src="https://youtu.be/jeioEVOZSy4" type="video/mp4"></video></div></div></div>
+                                                            <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/FPk4bluHAMI" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div> <center></center></div></div>
+                                                                <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/iTogqhWyaFk" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                    <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                        <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/pDDCKGV8cuM" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                        <div class="owl-item" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/GVQcTx93NvQ" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                            <div class="owl-item active" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/XihFi1ouyTQ" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                <div class="owl-item active" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/33VMJ6B8SS8" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                    <div class="owl-item active" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                        <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/KmYm6zphh_A" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                        <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                            <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/HMjc-UHyDjk" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                            <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                                <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/IisgnbMfKvI" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                                <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9">
+                                                                                                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/OoLYoTRLIm0" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div>
+                                                                                                    <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9"><video controls="controls" class="embed-responsive-item"><source src="https://www.gangahospital.com/public/videos/GangaBreastCare.mp4" type="video/mp4"></video></div></div></div>
+                                                                                                    <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/9txtu_ovCww" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div> <center></center></div></div>
+                                                                                                    <div class="owl-item cloned" style="width: 228.583px; margin-right: 10px;"><div class="col-12 "><div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/q-IFg8k4uS0" class="embed-responsive-item" style="border-radius: 2%;"></iframe></div></div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                                                                                                    <div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div></div></div> <div class="card-read-more mt-auto"><a target="_blank" href="https://www.youtube.com/c/hospitalrecords" class="btn btn-link btn-block d_word">
+                                       Know More
+                                    </a></div></div></div></div></div></div></div></div></div></section> <br> </div></div></div> </div></div></div>  </div></div>
+        <footer class="bg-darkblue" style="background-color: purple;">
+            <div class="container p-5" style="max-width: 1600px;">
+    
+                    <div class="row">
+                        <div class="col-6 small-center col-md-3  mt-4">
+                            <h5><u>Reports &amp; Awards</u></h5>
+                            <ul class="pd-0">
+                                
+                                
+                                <li style="text-align: unset;">Activity Reports - Orthopaedics</li>
+                                <li style="text-align: unset;">Activity Reports - Plastic Surgery</li>
+                                <li style="text-align: unset;">Awards - Orthopaedics</li>
+                                <li style="text-align: unset;">Awards - Plastic Surgery</li>
+                                <li style="text-align: unset;">News</li>
+                                <li style="text-align: unset;">Patient Information Brochure</li>
+    
+                            </ul>
+                        </div>
+                        <div class="col-6 small-center col-md-3  mt-4">
+                            <h5><u>Fellowships &amp; Careers</u></h5>
+                            <ul class="pd-0">
+                                <li>Fellowship Programs &amp; Training </li>
+                                 <li>Current Openings
+                                    </li>
+    
+                            </ul>
+                        </div>
+                        <div class="col-6 small-center col-md-3  mt-4">
+                            <h5><u>Complaint &amp; Feedback</u></h5>
+                           <p>Have any complaints or suggestions?
+                                    Just tell us. We are here to help you with everything.</p>
+                                    Share your Feedback on our website<br><br>
+                                    Terms &amp; Conditions / Cancellation Policy<br>
+                                Privacy Policy<br><br>
+                        </div>
+                        <div class="col-6 small-center col-md-3  mt-4">
+                            <h5><u> Foundations</u></h5>
+                            <ul class="pd-0">
+                                <li style="text-align: unset;"> Women's &amp; Child Centre</li>
+                                <!--<li style="text-align: unset;"><a href="http://gangahospital.com/urology" target="_blank">Ganga Urology Clinic</a></li>-->
+                                <li style="text-align: unset;"> Orthopaedic Research &amp; Education
+                                        Foundation  </li>
+                                <li style="text-align: unset;"> Spine Research Foundation</li>
+                                <li style="text-align: unset;"> Institute of Health
+                                        Sciences</li>
+                            </ul>
+                        </div>
+    
+                    </div>
+    
+                        <div class="row text-center">
+                            
+                            <div class="col-md-3"></div>
+                            <div class=" col-md-5 mt-4">
+                                <div id="contact">
+                                <p class="font-24">Our Location</p>
+                                <hr class="bg-white">
+                                <h5>Hospital IQ</h5>
+                                <p>313, Mettupalayam Road, Saibaba Kovil,
+                                    Coimbatore - 641 043. <br>
+                                    Tamil Nadu, India.<br>
+                                    Contact : 0422 4250000 /<br> +91 422 2485000
+                                    </p>
+                                    </div>
+                            </div>
+                            <div class="col-md-4"></div>
+    
+                        </div>
+        
+            </div>
+            <div class="row">
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://www.gangahospital.com/public/js/app.js"></script>
+                <script>
+                $(function () {
+                    $('.owl-carousel').owlCarousel({
+                        navigation : true,
+                        loop: true,
+                        margin: 10,
+                        responsiveClass: true,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+
+                        responsive: {
+                            0: {
+                                items: 1,
+                                loop: true
+                            },
+                            600: {
+                                items: 3,
+                                loop: true
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: true
+                            }
+                        },
+
+                    });
+                });
+    
+        
+              function openModal(a)
+                {
+    
+                    $("#myModalDesc ul").hide();
+                    $("."+a).show();
+                    $("#myModalDesc").modal("toggle");
+                }
+                 $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).parent().prev(".collapse-link").find(".fa").addClass("fa-minus-circle").removeClass(
+                    "fa-plus-circle");
+            });
+    
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+    
+                $(this).parent().prev(".collapse-link").find(".fa").removeClass("fa-plus-circle").addClass(
+                    "fa-minus-circle");
+            }).on('hide.bs.collapse', function () {
+                $(this).parent().prev(".collapse-link").find(".fa").removeClass("fa-minus-circle").addClass(
+                    "fa-plus-circle");
+            });
+        });
+        
+         $(window).on('load', function() {
+            $('#radiology_wanted').modal('show');
+        });
+         
+            </script>
+            <script>   
+        </script>
+    
+    
+    
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true">
+    
+    </grammarly-desktop-integration>
+    </html>

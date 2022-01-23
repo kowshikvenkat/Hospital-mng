@@ -1,0 +1,548 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.bing.com/th?id=OIP.qqLc5LFoq_Wq8ON6xAy5qQHaHe&w=96&h=102&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2">
+    
+    <title>AboutUs-HospitalIQ</title>
+    
+    <link href="https://www.gangahospital.com/public/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css  ">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&amp;display=swap" rel="stylesheet">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LN7KG1XEHX');
+</script>
+
+    <link href="Animation.css" rel="stylesheet">
+<style>
+    .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+
+
+    .modal-body {
+        position: relative;
+        padding: 0px;
+    }
+
+    .close {
+        position: absolute;
+        right: -30px;
+        top: 0;
+        z-index: 999;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        opacity: 1;
+    }
+    
+    /*.container{*/
+    /*    padding-left: 2vw;padding-right: 2vw;*/
+    /*}*/
+    
+    
+    
+    .testimonial-sec {
+    overflow: hidden !important;
+}
+    
+    #timeline {
+  list-style: none;
+  position: relative;
+  margin:50px auto;
+  width:100%;
+}
+#timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #4997cd;
+  left: 50%;
+  margin-left: -1.5px;
+}
+#timeline .clearFix {
+  clear: both;
+  height: 0;
+}
+#timeline .timeline-badge {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    font-size: 1.2em;
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    margin-left: -13px;
+    background-color: #fff;
+    z-index: 0;
+    border-radius: 50%;
+    border: 2px solid #4997cd;
+}
+#timeline .timeline-badge span.timeline-balloon-date-day {
+  font-size: 1.4em;
+}
+#timeline .timeline-badge span.timeline-balloon-date-month {
+  font-size: .7em;
+  position: relative;
+  top: -10px;
+}
+#timeline .timeline-badge.timeline-filter-movement {
+  background-color: #ffffff;
+  font-size: 1.7em;
+  height: 35px;
+  margin-left: -18px;
+  width: 35px;
+  top: 40px;
+}
+#timeline .timeline-badge.timeline-filter-movement a span {
+  color: #4997cd;
+  font-size: 1.3em;
+  top: -1px;
+}
+#timeline .timeline-badge.timeline-future-movement {
+    background-color: #ffffff;
+    height: 120px;
+    width: 120px;
+    font-size: 1.1em;
+    top: -16px;
+    margin-left: -60px;
+    border: 2px solid #4997cd;
+}
+#timeline .timeline-badge.timeline-future-movement p {
+    color:#1782cc;
+    position: absolute;
+    top: 42px;
+    left: 8px;
+}
+#timeline .timeline-badge.timeline-future-movement a span {
+  color: #4997cd;
+  font-size: .9em;
+  top: 0;
+  left: 1px;
+}
+#timeline .timeline-movement {
+/*   border-bottom: dashed 1px #4997cd; */
+  position: relative;
+  margin-bottom: 5rem;
+}
+#timeline .timeline-movement.timeline-movement-top {
+  height: 50px;
+}
+/* #timeline .timeline-movement .timeline-item {
+  padding: 20px 0;
+} */
+#timeline .timeline-movement .timeline-item .timeline-panel {
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  color: #666;
+  padding: 30px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#timeline .timeline-movement .timeline-item .timeline-panel.credits  .timeline-panel-ul .lefting-wrap {
+    /*float: right;*/
+    width: 75%;
+    height: 130px;
+    background-color: floralwhite;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits  .timeline-panel-ul .righting-wrap {
+    /*float: left;*/
+    width: 80%;
+    height: auto;
+    padding: 0 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
+  color: #666;
+  width: 130%;
+}
+.clear {
+    clear:both;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits  .timeline-panel-ul .lefting-wrap {
+    /*float: left;*/
+    width: 75%;
+    height: 135px;
+    background-color: floralwhite;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits  .timeline-panel-ul .righting-wrap {
+    /*float: right;*/
+    width: 94%;
+    height: auto;
+    padding: 0 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul li.img-wraping {
+    width: 130%;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul li.img-wraping a img, #timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li.img-wraping a img {
+    width: 100%;
+    height: 270px;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul li {
+    color: #666;
+    width: 100%;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li a.importo  {
+  color: #468c1f;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
+  text-align: left;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul a.importo {
+  color: #e2001a;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+</style>
+    <style type="text/css">
+    
+.bg-darkblue{
+   background-color: purple !important;
+   }
+.icon-bars a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+}
+
+.mainnav .text-black{
+    color: white !important;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #356178;
+}
+
+
+#float_top {
+  display: inline-block;
+  background-color: #356178;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#float_top::after {
+  /*content: "\f077";*/
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#float_top:hover {
+  cursor: pointer;
+  background-color: #5593a5;
+}
+#float_top:active {
+  background-color: #555;
+}
+#float_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+@media (min-width:768px)  { 
+     tablet, landscape iPad, lo-res laptops ands desktops 
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+    flex-wrap: wrap;
+}
+.navbar > .container, .navbar > .container-fluid {
+    display: initial;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center;
+}
+    
+}
+
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+    flex-wrap: wrap;
+}
+.navbar > .container, .navbar > .container-fluid {
+    display: initial !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center !important;
+}
+    
+}
+
+@media (min-width:1440px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+    flex-wrap: wrap;
+}
+.navbar > .container, .navbar > .container-fluid {
+    display: initial !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center !important;
+}
+    
+}
+
+
+@media (min-width:1880px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+      .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+    flex-wrap: nowrap;
+}
+.navbar > .container, .navbar > .container-fluid {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto; 
+    justify-content: left !important;
+}
+    
+}
+
+
+
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1004.0" data-gr-ext-installed="">
+    
+    <!--a id="float_top" class=""><i style="font-size: 2em;margin-top: 6px;" class="fa fa-angle-up fa-3 text-white" aria-hidden="true"></i></a-->
+      
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: purple">
+            <div class="container-fluid home-nav">
+                <a href="https://www.bing.com/th?id=OIP.VCXSyCcFaPcLk69VkXBfxwHaB6&w=310&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" class="navbar-brand">
+                    <img src="https://www.bing.com/th?id=OIP.VCXSyCcFaPcLk69VkXBfxwHaB6&w=310&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="Logo" style="width: 200px;"></a> 
+                    <a href="https://www.gangahospital.com/public/images/update/GPEA Logo.png">
+                        <img src="https://www.gangahospital.com/public/images/update/GPEA Logo.png" alt="Logo" style="width: 35px;"></a> &nbsp;
+                     <a href="https://www.gangahospital.com/public/images/update/nabl.png">
+                        <img src="https://www.gangahospital.com/public/images/update/nabl.png" alt="Logo" style="width: 45px;"></a> &nbsp;
+                <a href="https://www.gangahospital.com/public/images/logo/accrediation.png">
+                    <img src="https://www.gangahospital.com/public/images/logo/accrediation.png" alt="Logo"></a>&nbsp;
+              
+                <a href="https://www.gangahospital.com/public/images/logo/isoc.png">
+                    <img src="https://www.gangahospital.com/public/images/logo/isoc.png" alt="Logo"></a>
+
+
+              
+                <div id="navbarSupportedContent" class="collapse navbar-collapse" style="justify-content: center !important;">
+                    <ul class="navbar-nav"><li class="nav-item hide-large"><form action=""><div class="input-group">
+                        <input type="text" placeholder="Search Doctors, Procedures or Departments" autocomplete="off" id="searchText" class="form-control p-4 searchText"> 
+                        <div class="input-group-append"><button type="submit" class="btn bg-orange text-white pl-4 pr-4"><i class="fa fa-search"></i></button></div> <ul id="specDivs" class="list-unstyled data-list" style="top: 50px; width: 100%; max-height: 40vh;"></ul></div></form></li></ul> 
+                        <ul class="navbar-nav mainnav"><li class="nav-item"><a href="samplehospital.html" class="nav-link text-black">Home</a></li> <li class="nav-item"><a href="/Hospital Management/Aboutus.html" class="nav-link text-black">About Us</a></li> 
+                      <li class="nav-item"><a href="#" class="nav-link text-black">Contact Us
+                                </a></li> <li class="nav-item hide-small" style="margin-left: 15px;"><form action=""><div class="input-group"><input type="text" placeholder="Search Doctors, Procedures or Departments" autocomplete="off" id="searchText" class="form-control p-4 searchText"> <div class="input-group-append"><button type="submit" class="btn bg-orange text-white pl-4 pr-4" style="background-color: rgb(85, 147, 165);"><i class="fa fa-search"></i></button></div> <ul id="specDiv" class="list-unstyled data-list" style="top: 50px; width: 100%; max-height: 40vh;"></ul></div></form></li> <li class="nav-item hide-large"><a href="tel:04224250000" class="nav-link">Emergency <i class="fas fa-phone" style="transform: rotate(90deg);"></i>&nbsp;&nbsp;0422 4250000</a></li></ul></div></div></nav> <div><section style="background: white;"><div class="container pt-5 pb-5" style="max-width: 1600px;"><div class="row pb-5"><div class="col-12"><center><h1>Founders</h1></center> <br> <center>
+                                    <img src="https://th.bing.com/th/id/R.6f69e98155902407031fe5a2ce4c70f1?rik=8uudq9wp5yU2qg&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2018%2f05%2fDoctor-PNG-Pic.png&ehk=WDf%2f7sthjJt1CGPlT2F43BSXg9hvJ8PNe%2bmd9Khnck8%3d&risl=&pid=ImgRaw&r=0" alt="Founders" style="height: 400px;"> <br> 
+                                    <p style="margin-top: 10px;">Dr.Example</p></center> <br> <div class="row"><div class="col-sm-12 d-flex align-items-stretch"><div class="card border-dark mb-3">
+                                        <div class="card-header text-center"><h1><b>ABOUT HOSPITAL IQ</b></h1></div> <div class="card-body text-dark"><p class="card-text"></p><p class="text-justify pb-4">
+                    Hospital IQ was started in 1978 by Dr Example with 17 beds and 2 Operating theatres at Ramnagar, Coimbatore.  The hospital underwent multi-staged expansions and was converted to a specialty centre.  The hospital moved over to its present premises in Mettupalayam Road, Coimbatore in 2007 and also had added expansion to a separate block in 2020.
+                </p> <p class="text-justify pb-4">
+                     At present, with a bed capacity of 650 beds and 36 Operating theatres, the hospital stands as one of the largest speciality units in this field in South Asia.
+                </p> <p class="text-justify pb-4">
+                    In 2019, the hospital catered to  2,05,392  outpatients and 26,672 surgeries.   <br><br>
+                    </div></div></div></div> <div class="row"><div class="col-sm-6 d-flex align-items-stretch"><div class="card border-dark mb-3"><div class="card-header text-center"><b>OUR VISION</b></div> <div class="card-body text-dark"><p class="card-text text-justify">To showcase to the world the best in patient care, surgical expertise, academics, medical ethics and state of the art technology.
+                        To be a centre which will be a pride of our country.</p></div></div></div> <div class="col-sm-6 d-flex align-items-stretch"><div class="card border-dark mb-3"><div class="card-header text-center"><b>OUR MISSION</b></div> <div class="card-body text-dark"><p class="card-text text-justify">To provide quality treatment at an affordable cost so that the expertise will be available to every citizen of our country.</p></div></div></div></div> <br></div> <br> <center>
+                            <h1 class="text-center">HOSPITAL IQ - THE JOURNEY</h1></center> <div class="container-fluid"><div class="row"><div id="timeline"><div class="row timeline-movement timeline-movement-top"><div class="timeline-badge timeline-future-movement"><p>1978 - 1991</p></div></div> <div class="row timeline-movement"><div class="timeline-badge center-left"></div> <div class="col-sm-6  timeline-item"><div class="row"><div class="col-sm-11"><div class="timeline-panel credits anim animate fadeInLeft"><ul class="timeline-panel-ul"><div class="lefting-wrap"><li class="img-wraping"><center><a href="#"><img src="https://th.bing.com/th/id/OIP.VDI2QhWRWaz8kmZyscxITgHaES?pid=ImgDet&rs=1" alt="user-image" class="img-responsive"></a></center></li></div> 
+                                <div class="righting-wrap" style="margin-top: 145px;"><li style="text-align: center;"><a href="#" class="importo">1978 - 1991</a></li> <li><span class="causale" style="color: rgb(0, 0, 0); font-weight: 400;">The hospital was founded by Dr.Example in the year 1978. 
+                                            <br> <ul><li>17 beds</li> <li>Two Operating Rooms</li></ul></span></li></div> <div class="clear"></div></ul></div></div></div></div></div> <div class="row timeline-movement timeline-movement-top"><div class="timeline-badge timeline-future-movement"><p>1991 - 2004</p></div></div> <div class="row timeline-movement"><div class="timeline-badge center-right" style="background-color: rgb(255, 255, 255);"></div> <div class="offset-sm-6 col-sm-6  timeline-item"><div class="row"><div class="col-sm-11" style="margin-left: 20px;"><div class="timeline-panel debits anim animate fadeInRight">
+                                                <ul class="timeline-panel-ul"><div class="lefting-wrap"><li class="img-wraping"><a href="#"><img src="https://th.bing.com/th/id/OIP.1unrluQ9xXvbCcSKjJwkvwHaEp?pid=ImgDet&rs=1" alt="user-image" class="img-responsive"></a></li></div> <div class="righting-wrap" style="margin-top: 135px;"><li style="text-align: center;"><a href="#" class="importo">1991 - 2004</a></li> <li style="text-align: center;"><span class="causale" style="color: rgb(0, 0, 0); font-weight: 600;">The First Expansion</span></li> <li><span class="causale" style="color: rgb(0, 0, 0); font-weight: 400;">speciality centre. <br> <ul><li>42 beds</li> <li>Four Operating Rooms</li></ul></span></li></div> <div class="clear"></div></ul></div></div></div></div></div> 
+                                                <div class="row timeline-movement timeline-movement-top"><div class="timeline-badge timeline-future-movement"><p>2004 - 2020</p></div></div> <div class="row timeline-movement"><div class="timeline-badge center-left"></div> <div class="col-sm-6  timeline-item"><div class="row"><div class="col-sm-11"><div class="timeline-panel credits anim animate fadeInLeft">
+                                                    <ul class="timeline-panel-ul"><div class="lefting-wrap"><li class="img-wraping"><a href="#"><img src="https://assetsamerica.com/wp-content/uploads/Lines-of-Business/Hospital-Building/POSTED/Hospital-Building-Feature-B-UPMC-Childrens-South-Fayette-Exterior-3-1900x721.jpg" alt="user-image" class="img-responsive"></a></li></div>
+                                                         <div class="righting-wrap" style="margin-top: 145px;"><li style="text-align: center;"><a href="#" class="importo">2004 - 2020</a></li> <li style="text-align: center;"><span class="causale" style="color: rgb(0, 0, 0); font-weight: 600;">The Second Expansion </span></li> <li><span class="causale" style="color: rgb(0, 0, 0); font-weight: 400;">Sub-speciality niche areas Spine, Arthroplasty, Pedaitric Orthopaedics, Sports medicine, Brachial plexus injury, etc. 
+                                            <br> <ul><li>135 beds</li> <li>Six Operating Rooms</li></ul></span></li></div> <div class="clear"></div></ul></div></div></div></div></div>
+                                            
+                                             <div class="clear"></div></ul></div></div></div></div></div></div></div></div></div></div></section></div></div>
+                                            <footer class="bg-darkblue" style="background-color: purple;">
+                                                <div class="container p-5" style="max-width: 1600px;">
+                                        
+                                                        <div class="row">
+                                                            <div class="col-6 small-center col-md-3  mt-4">
+                                                                <h5><u>Reports &amp; Awards</u></h5>
+                                                                <ul class="pd-0">
+                                                                    
+                                                                    
+                                                                    <li style="text-align: unset;">Activity Reports - Orthopaedics</li>
+                                                                    <li style="text-align: unset;">Activity Reports - Plastic Surgery</li>
+                                                                    <li style="text-align: unset;">Awards - Orthopaedics</li>
+                                                                    <li style="text-align: unset;">Awards - Plastic Surgery</li>
+                                                                    <li style="text-align: unset;">News</li>
+                                                                    <li style="text-align: unset;">Patient Information Brochure</li>
+                                        
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 small-center col-md-3  mt-4">
+                                                                <h5><u>Fellowships &amp; Careers</u></h5>
+                                                                <ul class="pd-0">
+                                                                    <li>Fellowship Programs &amp; Training </li>
+                                                                     <li>Current Openings
+                                                                        </li>
+                                        
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6 small-center col-md-3  mt-4">
+                                                                <h5><u>Complaint &amp; Feedback</u></h5>
+                                                               <p>Have any complaints or suggestions?
+                                                                        Just tell us. We are here to help you with everything.</p>
+                                                                        Share your Feedback on our website<br><br>
+                                                                        Terms &amp; Conditions / Cancellation Policy<br>
+                                                                    Privacy Policy<br><br>
+                                                            </div>
+                                                            <div class="col-6 small-center col-md-3  mt-4">
+                                                                <h5><u> Foundations</u></h5>
+                                                                <ul class="pd-0">
+                                                                    <li style="text-align: unset;"> Women's &amp; Child Centre</li>
+                                                                    <!--<li style="text-align: unset;"><a href="http://gangahospital.com/urology" target="_blank">Ganga Urology Clinic</a></li>-->
+                                                                    <li style="text-align: unset;"> Orthopaedic Research &amp; Education
+                                                                            Foundation  </li>
+                                                                    <li style="text-align: unset;"> Spine Research Foundation</li>
+                                                                    <li style="text-align: unset;"> Institute of Health
+                                                                            Sciences</li>
+                                                                </ul>
+                                                            </div>
+                                        
+                                                        </div>
+                                        
+                                                            <div class="row text-center">
+                                                                
+                                                                <div class="col-md-3"></div>
+                                                                <div class=" col-md-5 mt-4">
+                                                                    <div id="contact">
+                                                                    <p class="font-24">Our Location</p>
+                                                                    <hr class="bg-white">
+                                                                    <h5>Hospital IQ</h5>
+                                                                    <p>313, Mettupalayam Road, Saibaba Kovil,
+                                                                        Coimbatore - 641 043. <br>
+                                                                        Tamil Nadu, India.<br>
+                                                                        Contact : 0422 4250000 /<br> +91 422 2485000
+                                                                        </p>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-4"></div>
+                                        
+                                                            </div>
+                                            
+                                                </div>
+                                                <div class="row">
+                                                </div>
+                                            </footer>
+
+    
+    <script src="https://www.gangahospital.com/public/js/app.js"></script>
+    <script>
+  
+   
+/**********************Scroll Animation "START"************************************/
+$(document).ready(function(){
+var $animation_elements = $('.anim');
+var $window = $(window);
+
+function check_if_in_view() {
+var window_height = $window.height();
+var window_top_position = $window.scrollTop();
+var window_bottom_position = (window_top_position + window_height);
+
+$.each($animation_elements, function() {
+var $element = $(this);
+var element_height = $element.outerHeight();
+var element_top_position = $element.offset().top;
+var element_bottom_position = (element_top_position + element_height);
+
+//check to see if this current container is within viewport
+if ((element_bottom_position >= window_top_position) &&
+(element_top_position <= window_bottom_position)) {
+$element.addClass('animated');
+} else {
+$element.removeClass('animated');
+}
+});
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+});
+/**********************Scroll Animation "END"************************************/
+
+/**********************Change color of center aligned animated content small Circle  "START"************************************/
+$(document).ready(function(){
+    $(" .debits").hover(function(){
+        $(" .center-right").css("background-color", "#4997cd");
+        }, function(){
+        $(" .center-right").css("background-color", "#fff");
+    }); 
+});
+$(document).ready(function(){
+    $(".credits").hover(function(){
+        $(".center-left").css("background-color", "#4997cd");
+        }, function(){
+        $(".center-left").css("background-color", "#fff");
+    }); 
+});
+/**********************Change color of center aligned animated content small Circle  "END"************************************/
+</script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,109 @@
+body{
+    overflow-x: hidden;
+
+  
+}
+#buttons{
+    display: flex;
+    float: right;
+    
+}
+table{
+  position: absolute;
+  left:10%;
+    margin-top: 7%;
+    width: 1000px;
+
+      box-shadow: 0 0 10px grey;
+
+   
+    font-size:20px ;
+
+}
+tr:hover{
+background-color: #009879;
+color: white;   
+
+  
+}
+tr:nth-of-type(even):hover{
+background-color:#009879;
+color: white;   
+
+  
+}
+ table tr{
+     
+    height: 100%;
+    width: 100%;
+position: relative;
+padding: 5%;
+}
+table tr:nth-of-type(even){
+background: #f3f3f3;
+}
+table th{
+    background-color: grey;
+    
+}
+button{
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    border:2px solid white;
+    width: 150px;
+    color: white;
+    background-color: #009879;
+}
+button:active{
+    background-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#navbar{
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+#navbar img{
+    
+    height: 100%;
+}
+#inputfield,#buttons{
+    margin-top: 4%;
+}
+#inputfield{
+    margin-left:5%;
+    height: 50px;
+    font-size: 30px;
+}
+#navbarcontent{
+    position:relative;
+    left: 10%;
+    top: -60%;
+   
+}
+#navbarcontent a{
+    position: relative;
+    margin-top: -10%;
+    padding-left: 20%;
+    text-decoration: none;
+    color: blue;
+    font-weight: 800;
+
+}
+i{
+    color: black;
+}
+#redirect{
+    position: absolute;
+    top: 20px;
+     right: 10%;
+     height: 30px;
+
+}
+#redirect a{
+    text-decoration: none;
+    color: white;
+}
